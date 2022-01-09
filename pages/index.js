@@ -19,6 +19,7 @@ export default function Home() {
   });
 
   console.log("next auth", process.env.NEXTAUTH_URL)
+  console.log("next auth", process.env.GOOGLE_CLIENT_SECRET)
   
   return (
     status !== "loading"
