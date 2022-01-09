@@ -12,11 +12,13 @@ export default function Home() {
   const router = useRouter();
   
   const {data: session, status} = useSession({
-    required: true,
-    onUnauthenticated(){
-      router.replace("auth/signin");
-    }
+    // required: true,
+    // onUnauthenticated(){
+    //   router.replace("auth/signin");
+    // }
   });
+
+  console.log("next auth", process.env.NEXTAUTH_URL)
   
   return (
     status !== "loading"
@@ -28,7 +30,7 @@ export default function Home() {
       </Head>
       <Header/>
 
-      <Feed/>  
+      {/* <Feed/>   */}
 
       <Modal/>
     </div>
