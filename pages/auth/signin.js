@@ -20,7 +20,7 @@ function SignIn({ providers }) {
 
     return (
         <>
-          <div className="bg-gray-50 flex flex-col justify-center items-center h-screen pb-20">
+          {/* <div className="bg-gray-50 flex flex-col justify-center items-center h-screen pb-20">
             <div className="flex flex-col items-center bg-white px-8 py-8 border border-gray-300">
               <div className="relative w-48 h-20 inline-grid">
                 <Image
@@ -96,7 +96,7 @@ function SignIn({ providers }) {
                   />
               </div>
             </div>
-          </div>
+          </div> */}
         </>
     )
 }
