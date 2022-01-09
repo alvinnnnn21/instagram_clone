@@ -16,6 +16,8 @@ function SignIn({ providers }) {
       })
     }
 
+    console.log("providers", providers);
+
     return (
         <>
           <div className="bg-gray-50 flex flex-col justify-center items-center h-screen pb-20">

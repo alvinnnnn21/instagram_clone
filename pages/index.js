@@ -17,9 +17,6 @@ export default function Home() {
     //   router.replace("auth/signin");
     // }
   });
-
-  console.log("next auth", process.env.NEXTAUTH_URL)
-  console.log("next auth", process.env.GOOGLE_CLIENT_SECRET)
   
   return (
     status !== "loading"
