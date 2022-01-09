@@ -16,8 +16,6 @@ function SignIn({ providers }) {
     //   })
     // }
 
-    console.log("providers", providers);
-
     return (
         <>
           {Object.values(providers).map((provider) => (
@@ -110,9 +108,10 @@ function SignIn({ providers }) {
 
 export async function getServerSideProps(context) {
     const providers = await getProviders()
+    console.log("providers signin", providers);
     return {
       props: { providers },
     }
-  }
+}
 
 export default SignIn
